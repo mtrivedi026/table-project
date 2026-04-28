@@ -18,7 +18,7 @@ const columns = [
     width: 180,
     filter: {
       mode: "dynamic",              // backend se values aayengi
-      endpoint: "http://localhost:5000/api/table/filters",
+      endpoint: "https://table-project-367d.onrender.com/api/table/filters",
       valueKey: "role",             // res.data.role
       paramName: "filterRole"       // backend ko ye naam bhejo
     }
@@ -48,7 +48,7 @@ function App() {
   return (
     <ProTable
       columns={columns}
-      fetchUrl="http://localhost:5000/api/table"
+      fetchUrl="https://table-project-367d.onrender.com/api/table"
       limit={10}
     />
   );

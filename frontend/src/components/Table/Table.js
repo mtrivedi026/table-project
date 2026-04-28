@@ -37,7 +37,7 @@ export default function Table() {
   }, [filter, search, sort, page]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/table/filters`)  // ✅ Fix 3 - sahi endpoint
+    fetch(`https://table-project-367d.onrender.com/api/table/filters`)  // ✅ Fix 3 - sahi endpoint
       .then((res) => res.json())
       .then((res) => setFilters(res.data || {}));
   }, []);
